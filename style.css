@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+#dealer-cards img {
+  height: 175px;
+  width: 125px;
+  margin: 1px;
+}
+#your-cards img {
+  height: 175px;
+  width: 125px;
+  margin: 1px;
+}
+#hit {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-family:serif;
+}
+#stay {
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  font-family:serif;
+}
+h2{
+  color: darkred;
+  font-family: serif ;
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  width: 80px;
+  height: 25px;
+  border: 4px solid darkred;
+}
+button {
+  --b: 3px;   /* border thickness */
+  --s: .50em; /* size of the corner */
+  --color: darkred; /*button color */
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+button:hover,
+button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+button:active {
+  background: var(--color);
+  color: #fff; /* button color after clicking */
+}
+#bank, #bankAccount{
+  color: darkred;
+  font-family: serif ;
+  background-color: white;
+  margin: 10px;
+  width: auto;
+  height:230px;
+  border: 4px solid darkred;
+}
+#bankAccount{
+  height:auto;
+}
+  #results{
+    text-shadow: 0 0 4px #ff000b,
+             0 0 8px #00ff22,
+             0 0 16px #00ff55;
+    font-weight: bold;
+  }
+  #flex-container{
+    justify-content: center;
+    display: flex;
+  }
+  div:last-child{
+    align-items: center;
+    background-color: #f1f1f1;
+    margin: 10px;
+    height:220px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 20px;
+    background-color: forestgreen;
+    border: 5px solid black;
+  }
+  input{
+    margin-left: 25px;
+  margin-right: 25px;
+  }
+  

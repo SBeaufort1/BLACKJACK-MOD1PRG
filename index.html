@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="blackjack.js"></script>
+    </head>
+  <body>
+    <style>
+      body{
+       background-image: url(https://cdn.vectorstock.com/i/1000x1000/06/06/blackjack-table-vector-30606.webp);
+      background-repeat: no-repeat;
+      background-size: 1500px;
+      background-position: center;
+      }
+    </style>
+    <div id="flex-container">
+    <div>
+        <h2 style="width:auto;">Dealer: <span id="dealer-sum"> </span></h2>
+        <div id="dealer-cards"></div>
+        <h2>You: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+        <br>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button> 
+    </div>
+    <div id="bank">
+        <h2 id="bankAccount"></h2>
+        <form>
+            <label form="bet">Place Your Bet!</label><br>
+            <input type="number" id="bet" placeholder="Enter Amount"><br>
+            <button type="button" id="submit" value="Submit">Submit</button>
+            <button id="resetBank">Reset Bank Account</button>
+        </form>
+        
+    </div>
+    </div>
+
+    <p id="results"></p>
+  </body>
+</html>
